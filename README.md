@@ -6,7 +6,7 @@ Este projeto tem como objetivo demonstrar a implementação do padrão Singleton
 
 1. Clone este repositório em sua máquina local utilizando o seguinte comando:
 ```
-git clone https://github.com/seu-usuario/singleton-csharp-sqlserver.git
+git clone https://github.com/seu-usuario/crud-csharp-sqlserver.git
 ```
 
 2. Abra a solução `Singleton.sln` no Visual Studio.
