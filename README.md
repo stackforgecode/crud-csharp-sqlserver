@@ -5,13 +5,36 @@ Este projeto tem como objetivo demonstrar a implementação do padrão Singleton
 ## 🚀 Instruções para baixar e rodar o projeto
 
 1. Clone este repositório em sua máquina local utilizando o seguinte comando:
-```
+```bash
 git clone https://github.com/stackforgecode/crud-csharp-sqlserver.git
+ 
+// navega até o diretório crud-csharp-sqlserver/
+
+cd crud-csharp-sqlserver/
+
+// Verifique se o dotnet-cli está instalado corretamente:
+dotnet --version
 ```
 
-2. Abra a solução `Singleton.sln` no Visual Studio.
+2. Abra o projeto no Visual Studio ou Visual Studio Code. 
  
-3. Certifique-se de que o projeto `Singleton` seja o projeto de inicialização.
+3. Crie uma aplicação de console usando a CLI do dotnet: 
+```bash
+dotnet new console -n crud-csharp-sqlserver -f net6.0
+```
+
+3. Ainda utilizando a CLI, vamos adicionar:
+
+```bash
+dotnet new gitignore 
+
+dotnet new webconfig
+
+dotnet add package Microsoft.Data.SqlClient --version 5.1.1
+
+dotnet new xunit
+```
+
 
 4. Abra o arquivo `web.config` na pasta do projeto e verifique se a string de conexão está correta.
 
@@ -21,8 +44,15 @@ git clone https://github.com/stackforgecode/crud-csharp-sqlserver.git
 
 - C#
 - SQL Server
+- Nuget
+- xUnit
 
 ## 📝 Referências
 
 - [Microsoft SQL Server](https://www.microsoft.com/pt-br/sql-server/)
+- [Como utilizar a classe SqlCommand](https://learn.microsoft.com/pt-br/dotnet/framework/data/adonet/sql/linq/how-to-directly-execute-sql-commands)
+- [Modelando uma consultado com a classe SqlCommand](https://learn.microsoft.com/pt-br/dotnet/framework/data/adonet/sql/linq/walkthrough-simple-object-model-and-query-csharp)
+- [Método ExecuteCommand](https://learn.microsoft.com/pt-br/dotnet/framework/data/adonet/sql/linq/how-to-directly-execute-sql-commands)
+- [Microsoft.Data.SqlClient](https://www.nuget.org/packages/Microsoft.Data.SqlClient/)
 - [Singleton Design Pattern in C#](https://www.c-sharpcorner.com/article/singleton-design-pattern-in-c-sharp/)
+- [xunit](https://xunit.net/)
