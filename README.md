@@ -5,9 +5,10 @@ Este projeto tem como objetivo demonstrar a implementação do padrão Singleton
 ## 🚀 Instruções para baixar e rodar o projeto
 
 1. Clone este repositório em sua máquina local utilizando o seguinte comando:
+
 ```bash
 git clone https://github.com/stackforgecode/crud-csharp-sqlserver.git
- 
+
 // navega até o diretório crud-csharp-sqlserver/
 
 cd crud-csharp-sqlserver/
@@ -16,9 +17,10 @@ cd crud-csharp-sqlserver/
 dotnet --version
 ```
 
-2. Abra o projeto no Visual Studio ou Visual Studio Code. 
- 
-3. Crie uma aplicação de console usando a CLI do dotnet: 
+2. Abra o projeto no Visual Studio ou Visual Studio Code.
+
+3. Crie uma aplicação de console usando a CLI do dotnet:
+
 ```bash
 dotnet new console -n crud-csharp-sqlserver -f net6.0
 ```
@@ -26,15 +28,16 @@ dotnet new console -n crud-csharp-sqlserver -f net6.0
 3. Ainda utilizando a CLI, vamos adicionar:
 
 ```bash
-dotnet new gitignore 
+dotnet new gitignore
 
 dotnet new webconfig
 
-dotnet add package Microsoft.Data.SqlClient --version 5.1.1
+dotnet add package System.Data.SqlClient
+
+dotnet add package System.Configuration.ConfigurationManager
 
 dotnet new xunit
 ```
-
 
 4. Abra o arquivo `web.config` na pasta do projeto e verifique se a string de conexão está correta.
 
