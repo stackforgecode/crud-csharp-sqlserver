@@ -21,23 +21,32 @@ Para definir um modelo de dados para esse projeto, podemos seguir os seguintes p
 5. Montar o diagrama de entidade e relacionamento (DER): com base nas informações coletadas nos passos anteriores, podemos montar o seguinte diagrama de entidade e relacionamento:
 
 ```
-+-------+    +------------+
-| Objeto|    | SQL Server |
-+-------+    +------------+
-| Id    |    |            |
-| Nome  |    |            |
++-------+        +------------+
+| Objeto|        | SQL Server |
++-------+        +------------+
+| Id    |        |            |
+| Nome  |        |            |
 | Descricao |    |            |
-+-------+    +------------+
++-------+        +------------+
+
++----------+ +------------------+
+| Objeto | | SQL Server |
++----------+ +------------------+
+| Id |1 * | Id |
+| Nome |--------------| Nome varchar() |
+| Descricao| | Descricao nvarchar() |
++----------+ +------------------+
 ```
 
 6. Criar o script de criação da tabela no banco de dados: com base no DER e nos tipos de dados definidos, podemos criar o seguinte script de criação da tabela no SQL Server:
 
 ```sql
 CREATE TABLE Objeto (
-    Id INT IDENTITY(1,1) PRIMARY KEY,
-    Nome VARCHAR(50) NOT NULL,
-    Descricao VARCHAR(MAX) NULL
-)
+   Id INT IDENTITY(1,1) PRIMARY KEY,
+   Nome VARCHAR(100) NOT NULL,
+   Descricao NVARCHAR(300) NULL
+);
+
 ```
 
 7. Inserir dados de exemplo: podemos inserir dados de exemplo na tabela para verificar se a estrutura e o modelo de dados estão corretos. Para isso, podemos executar o seguinte script:

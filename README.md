@@ -75,6 +75,22 @@ dotnet new xunit
   - https://www.docker.com/products/docker-desktop/
   - https://rancherdesktop.io/
 
+- Diagramação de Banco de Dados:
+
+  - https://dbdiagram.io/home
+
+- Conversores de códigos:
+
+  - JSon para C#:
+    - https://json2csharp.com/
+  - JSON para SQL:
+
+    - https://www.convertjson.com/json-to-sql.htm
+    - https://sqlbook.io/json2sql
+
+  - SQL Múltiplas sintaxes:
+    - https://sqlines.com/online
+
 <hr>
 
 ## 📝 REFERÊNCIAS
