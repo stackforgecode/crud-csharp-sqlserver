@@ -16,6 +16,7 @@ namespace SingletonCRUD
             connection.Open();
         }
 
+        // Padrao Singleton
         public static DbConnection Instance
         {
             get
