@@ -47,7 +47,7 @@ dotnet new xunit
 
 ### ⚙️ Ferramentas e Recursos
 
-- Editor de Código so seu crivo
+- Editor de Código ao seu crivo
   - Visual Studio Code (minha escolha para o projeto)
 - Ferramenta gráfica para gerenciamento de Banco de Dados
   - Azure Data Studio (minha escolha para o projeto)
