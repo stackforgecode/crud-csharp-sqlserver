@@ -3,11 +3,11 @@ using System.Data.SqlClient;
 
 namespace SingletonCRUD
 {
-    public class DbOperates
+    public class DbOperatesDAO
     {
         private readonly SqlConnection connection;
 
-        public DbOperates()
+        public DbOperatesDAO()
         {
             connection = DbConnection.Instance.GetConnection();
         }

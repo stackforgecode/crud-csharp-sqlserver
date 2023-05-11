@@ -7,7 +7,7 @@ namespace SingletonCRUD
     {
         static void Main(string[] args)
         {
-            DbOperates dbOperates = new DbOperates();
+            DbOperatesDAO dbOperates = new DbOperatesDAO();
 
             Console.WriteLine("Inserindo dados...");
             dbOperates.Insert("João", 25);

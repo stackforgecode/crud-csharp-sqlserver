@@ -11,21 +11,14 @@ namespace SingletonCRUD
 
         private DbConnection()
         {
-            string connectionString = @"Data Source=localhost,1433;Initial Catalog=AppSingleton;User ID=sa;Password=Local@123456789;";
+            string connectionString = ConfigurationManager.ConnectionStrings["DbConnection"].ConnectionString;
             connection = new SqlConnection(connectionString);
             connection.Open();
         }
 
         public static DbConnection Instance
         {
-            get
-            {
-                if (instance == null)
-                {
-                    instance = new DbConnection();
-                }
-                return instance;
-            }
+            get => instance ?? (instance = new DbConnection());
         }
 
         public SqlConnection GetConnection()
